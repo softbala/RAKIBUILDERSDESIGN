@@ -1,0 +1,364 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>RAKI Builders & Designs</title>
+  <meta name="description" content="RAKI Builders & Designs — Residential, Commercial, Interiors & Renovation. Based in Tamil Nadu." />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+  <!-- Tailwind Play CDN (for quick prototyping) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#f97316',
+            accent: '#06b6d4'
+          },
+          fontFamily: {
+            sans: ['Inter', 'ui-sans-serif', 'system-ui']
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Simple utility styles beyond Tailwind */
+    .glass { background: rgba(255,255,255,0.6); backdrop-filter: blur(6px); }
+    .scroll-smooth { scroll-behavior: smooth; }
+  </style>
+</head>
+<body class="scroll-smooth font-sans text-slate-900 bg-gradient-to-b from-white to-slate-50">
+
+  <!-- NAV -->
+  <header class="sticky top-0 z-40 bg-white/80 glass backdrop-blur-sm border-b">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="#home" class="flex items-center gap-3">
+        <img src="C:\RAKI\assets\logo.jpeg" alt="RAKI Logo" class="h-12 w-auto rounded-md" />
+      </a>
+
+      <nav class="hidden md:flex items-center gap-6 text-sm">
+        <a href="#home" class="hover:text-primary">Home</a>
+        <a href="#about" class="hover:text-primary">About</a>
+        <a href="#services" class="hover:text-primary">Services</a>
+        <a href="#projects" class="hover:text-primary">Projects</a>
+        <a href="#testimonials" class="hover:text-primary">Testimonials</a>
+        <a href="#team" class="hover:text-primary">Team</a>
+        <a href="#contact" class="bg-primary text-white px-4 py-2 rounded-md shadow-sm">Contact</a>
+      </nav>
+
+      <button id="mobileBtn" class="md:hidden p-2 rounded bg-slate-100">☰</button>
+    </div>
+
+    <!-- Mobile menu -->
+    <div id="mobileMenu" class="hidden md:hidden border-t bg-white">
+      <div class="px-4 py-6 flex flex-col gap-3">
+        <a href="#home" class="block">Home</a>
+        <a href="#about" class="block">About</a>
+        <a href="#services" class="block">Services</a>
+        <a href="#projects" class="block">Projects</a>
+        <a href="#testimonials" class="block">Testimonials</a>
+        <a href="#team" class="block">Team</a>
+        <a href="#contact" class="mt-2 bg-primary text-white px-4 py-2 rounded inline-block">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="overflow-x-hidden">
+
+    <!-- HERO -->
+    <section id="home" class="pt-12 pb-20">
+      <div class="max-w-6xl mx-auto px-6 lg:px-8 grid lg:grid-cols-2 gap-10 items-center">
+        <div>
+          <h1 class="text-4xl sm:text-5xl font-extrabold leading-tight">RAKI Builders & Designs
+            <span class="block text-primary text-2xl font-semibold mt-3">Crafting beautiful, lasting spaces</span>
+          </h1>
+          <p class="mt-6 text-slate-600 max-w-xl">Our mission is to build not just structures, but lasting relationship that stand the test of 
+		  time.</p>
+
+          <div class="mt-8 flex gap-4">
+            <a href="#projects" class="inline-flex items-center gap-2 bg-primary text-white px-5 py-3 rounded-md shadow">View Projects</a>
+            <a href="#contact" class="inline-flex items-center gap-2 border border-primary text-primary px-5 py-3 rounded-md">Request Quote</a>
+          </div>
+
+          <div class="mt-8 flex items-center gap-8">
+            <div class="flex items-center gap-3">
+              <div class="text-sm text-slate-500">Call us</div>
+              <div class="font-medium">+91 82486 72254</div>
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="text-sm text-slate-500">Email</div>
+              <div class="font-medium">hello@rakibuilders.com</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="rounded-2xl overflow-hidden shadow-lg">
+          <img src="C:\RAKI\assets\Resort.jpeg" alt="construction" class="w-full h-80 object-cover">
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="py-16 bg-white">
+      <div class="max-w-6xl mx-auto px-6 lg:px-8 grid lg:grid-cols-2 gap-8 items-center">
+        <div>
+          <h2 class="text-3xl font-bold">About RAKI Builders</h2>
+          <p class="mt-4 text-slate-600 text-justify">With over 24 years of proven excellence in the construction and infrastructure development industry, RAKI BUILDERS/DESIGN has earned a reputation as a trusted leader in delivering quality-driven, sustainable, and innovative building solution. Founded on the core principles of integrity, professionalism, and customer satisfaction, we specialize in residential, commercial, and turnkey construction projects across South India.</p>
+		  <p class="mt-4 text-slate-600">Our Team of highly skilled engineers, architects, and project managers is committed to tranforming every vission into reality-ontime, within budget, and with uncompromised quality. From site planning and structural execuation to interior design and project handover, we ensure excellence and attention to detail at every stage of development.</p>
+          
+        </div>
+
+        <div class="rounded-lg overflow-hidden">
+          <img src="C:\RAKI\assets\Pic-1.jpeg" alt="team" class="w-full h-96 object-cover">
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="py-16">
+      <div class="max-w-6xl mx-auto px-6 lg:px-8">
+        <h3 class="text-2xl font-bold">Services</h3>
+        <p class="text-slate-600 mt-2">Practical solutions across the build lifecycle.</p>
+
+        <div class="mt-8 grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <button class="project-card bg-gray-50 rounded-xl overflow-hidden cursor-pointer shadow-sm" data-img="Pic-1.jpeg" data-title="Industrial Building Construction" data-desc="Large-scale industrial warehouse construction completed by RAKI Builders.">
+            <img src="C:\RAKI\assets\commercial-1.jpeg" class="w-full h-44 object-cover" />
+            <div class="p-4"><div class="text-sm text-slate-500">Commercial • Industrial</div><h4 class="mt-2 font-semibold">Industrial Building Construction</h4></div>
+          </button>
+          
+		  <button class="project-card bg-gray-50 rounded-xl overflow-hidden cursor-pointer shadow-sm" data-img="Resort.jpeg" data-title="Landscape Garden Development" data-desc="Full landscape design with plantations, pathways and outdoor seating.">
+            <img src="C:\RAKI\assets\Resort.jpeg" class="w-full h-44 object-cover" />
+            <div class="p-4"><div class="text-sm text-slate-500">Residential • Cottage</div><h4 class="mt-2 font-semibold">Eco Resort Cottage Development </h4></div>
+          </button>
+
+          <button class="project-card bg-gray-50 rounded-xl overflow-hidden cursor-pointer shadow-sm" data-img="Resort.jpeg" data-title="Landscape Garden Development" data-desc="Full landscape design with plantations, pathways and outdoor seating.">
+            <img src="C:\RAKI\assets\garten.jpg" class="w-full h-44 object-cover" />
+            <div class="p-4"><div class="text-sm text-slate-500">Landscaping • Outdoor</div><h4 class="mt-2 font-semibold">Landscape Garden Development</h4></div>
+          </button>
+
+          <button class="project-card bg-gray-50 rounded-xl overflow-hidden cursor-pointer shadow-sm" data-img="Swim-pool.jpeg" data-title="Custom Swimming Pool Construction" data-desc="Luxury outdoor swimming pool with premium blue-tile finishing.">
+            <img src="C:\RAKI\assets\Swim-pool.jpeg" class="w-full h-44 object-cover" />
+            <div class="p-4"><div class="text-sm text-slate-500">Recreation • Luxury</div><h4 class="mt-2 font-semibold">Custom Swimming Pool Construction</h4></div>
+          </button>
+        </div>
+            <!--<h4 class="mt-4 font-semibold">Residential Construction</h4>
+            <p class="mt-2 text-sm text-slate-500">End-to-end home building: foundations, structure and finishes.</p> -->
+          </div>
+
+          <!--<div class="bg-white p-6 rounded-2xl shadow-sm border">
+            <div class="text-3xl">🛋️</div>
+            <h4 class="mt-4 font-semibold">Interior Design</h4>
+            <p class="mt-2 text-sm text-slate-500">Bespoke interiors with local materials and efficient layouts.</p>
+          </div>
+
+          <div class="bg-white p-6 rounded-2xl shadow-sm border">
+            <div class="text-3xl">🔧</div>
+            <h4 class="mt-4 font-semibold">Renovation & Remodeling</h4>
+            <p class="mt-2 text-sm text-slate-500">Upgrade kitchens, bathrooms and living spaces with minimal downtime.</p>
+          </div>
+
+          <div class="bg-white p-6 rounded-2xl shadow-sm border">
+            <div class="text-3xl">🏢</div>
+            <h4 class="mt-4 font-semibold">Commercial Projects</h4>
+            <p class="mt-2 text-sm text-slate-500">Office fit-outs and retail builds with on-time delivery.</p>
+          </div> -->
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="py-16 bg-white">
+      <div class="max-w-6xl mx-auto px-6 lg:px-8">
+        <div class="flex items-center justify-between">
+          <div>
+            <h3 class="text-2xl font-bold">Selected Projects</h3>
+            <p class="text-slate-600 mt-1">A sample of our recently completed work.</p>
+          </div>
+          <div class="text-sm text-slate-500">Based in Tamil Nadu — Chennai, Coimbatore, Pondicherry</div>
+        </div>
+
+        <div class="mt-8 grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <!-- Project cards -->
+          <button data-img="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?q=80&w=1400&auto=format&fit=crop&ixlib=rb-4.0.3&s=1" data-title="Heritage Villa - Chennai" data-desc="Restoration of a traditional Tamil villa with modern amenities." class="project-card bg-gray-50 rounded-xl overflow-hidden cursor-pointer shadow-sm">
+            <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?q=80&w=1400&auto=format&fit=crop&ixlib=rb-4.0.3&s=1" alt="Heritage Villa" class="w-full h-44 object-cover">
+            <div class="p-4">
+              <div class="text-sm text-slate-500">Residential • Renovation</div>
+              <h4 class="mt-2 font-semibold">Heritage Villa - Chennai</h4>
+              <p class="mt-2 text-sm text-slate-500">Restoration of a traditional Tamil villa with modern amenities storage.
+			  </p>
+            </div>
+          </button>
+
+          <button data-img="https://images.unsplash.com/photo-1505691723518-36a1b4c09a6f?q=80&w=1400&auto=format&fit=crop&ixlib=rb-4.0.3&s=2" data-title="Urban Apartment - Coimbatore" data-desc="Compact apartment interior optimized for light and storage." class="project-card bg-gray-50 rounded-xl overflow-hidden cursor-pointer shadow-sm">
+            <img src="C:\RAKI\assets\urban-dev.jpg" alt="Urban Apartment" class="w-full h-44 object-cover">
+            <div class="p-4">
+              <div class="text-sm text-slate-500">Interior • Apartment</div>
+              <h4 class="mt-2 font-semibold">Urban Apartment - Coimbatore</h4>
+              <p class="mt-2 text-sm text-slate-500">Compact apartment interior optimized for light and storage.</p>
+            </div>
+          </button>
+
+          <button data-img="https://images.unsplash.com/photo-1556761175-4b46a572b786?q=80&w=1400&auto=format&fit=crop&ixlib=rb-4.0.3&s=3" data-title="Office Fitout - Bangalore" data-desc="Open-plan office with collaborative zones and acoustic panels." class="project-card bg-gray-50 rounded-xl overflow-hidden cursor-pointer shadow-sm">
+            <img src="https://images.unsplash.com/photo-1556761175-4b46a572b786?q=80&w=1400&auto=format&fit=crop&ixlib=rb-4.0.3&s=3" alt="Office Fitout" class="w-full h-44 object-cover">
+            <div class="p-4">
+              <div class="text-sm text-slate-500">Commercial</div>
+              <h4 class="mt-2 font-semibold">Office Fitout - Bangalore</h4>
+              <p class="mt-2 text-sm text-slate-500">Open-plan office with collaborative zones and acoustic panels.</p>
+            </div>
+          </button>
+
+          <button data-img="https://images.unsplash.com/photo-1505691723518-36a1b4c09a6f?q=80&w=1400&auto=format&fit=crop&ixlib=rb-4.0.3&s=4" data-title="Coastal Bungalow - Pondicherry" data-desc="Lightweight coastal home designed for cross-ventilation and sea views." class="project-card bg-gray-50 rounded-xl overflow-hidden cursor-pointer shadow-sm">
+            <img src="C:\RAKI\assets\coast.JPG" alt="Coastal Bungalow" class="w-full h-44 object-cover">
+            <div class="p-4">
+              <div class="text-sm text-slate-500">Residential • New Build</div>
+              <h4 class="mt-2 font-semibold">Coastal Bungalow</h4>
+              <p class="mt-2 text-sm text-slate-500">Lightweight coastal home designed for cross-ventilation and sea views.</p>
+            </div>
+          </button>
+        </div>
+      </div>
+
+      <!-- Project modal -->
+      <div id="projectModal" class="fixed inset-0 hidden items-center justify-center z-50 p-6">
+        <div id="modalBg" class="absolute inset-0 bg-black/50"></div>
+        <div class="relative bg-white rounded-2xl max-w-3xl w-full overflow-hidden shadow-xl">
+          <img id="modalImg" src="" alt="" class="w-full h-56 object-cover">
+          <div class="p-6">
+            <div id="modalTags" class="text-sm text-slate-500">Residential • Renovation</div>
+            <h3 id="modalTitle" class="text-xl font-bold mt-2"></h3>
+            <p id="modalDesc" class="mt-3 text-slate-600"></p>
+            <div class="mt-4 flex gap-3">
+              <a href="#contact" class="bg-primary text-white px-4 py-2 rounded-md">Request Quote</a>
+              <button id="closeModal" class="px-4 py-2 border rounded-md">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section id="testimonials" class="py-16">
+      <div class="max-w-4xl mx-auto px-6 lg:px-8 text-center">
+        <h3 class="text-2xl font-bold">What clients say</h3>
+        <p class="text-slate-600 mt-2">We value client feedback — here are a few recent comments.</p>
+
+        <div class="mt-8 grid sm:grid-cols-3 gap-6">
+          <div class="bg-white p-6 rounded-2xl shadow-sm">“RAKI Builders transformed our old house into a dream home — on budget and on time."<div class="mt-4 font-semibold">S. Rajan</div><div class="text-sm text-slate-500">Homeowner</div></div>
+          <div class="bg-white p-6 rounded-2xl shadow-sm">“Their attention to detail and quick responses made the whole renovation stress-free."<div class="mt-4 font-semibold">Meera K.</div><div class="text-sm text-slate-500">Interior Client</div></div>
+          <div class="bg-white p-6 rounded-2xl shadow-sm">“Professional, neat and great after-sales support for minor fixes."<div class="mt-4 font-semibold">Vikram S.</div><div class="text-sm text-slate-500">Office Manager</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TEAM -->
+    <!--<section id="team" class="py-16 bg-white">
+      <div class="max-w-6xl mx-auto px-6 lg:px-8">
+        <h3 class="text-2xl font-bold">Meet the Team</h3>
+        <p class="text-slate-600 mt-2">A small team with big experience.</p>
+
+        <div class="mt-8 grid sm:grid-cols-2 md:grid-cols-3 gap-6">
+          <div class="bg-gray-50 rounded-2xl p-4 text-center shadow-sm"><img src="https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=7" alt="Arun" class="mx-auto rounded-full h-28 w-28 object-cover"><div class="mt-4 font-semibold">Arun Kumar</div><div class="text-sm text-slate-500">Founder & Principal Architect</div></div>
+          
+          <div class="bg-gray-50 rounded-2xl p-4 text-center shadow-sm"><img src="https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=7" alt="Karthik" class="mx-auto rounded-full h-28 w-28 object-cover"><div class="mt-4 font-semibold">Karthik A.</div><div class="text-sm text-slate-500">Project Manager</div></div>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- CONTACT -->
+    <section id="contact" class="py-16">
+      <div class="max-w-4xl mx-auto px-6 lg:px-8 grid lg:grid-cols-2 gap-8 items-center">
+        <div>
+          <h3 class="text-2xl font-bold">Get in touch</h3>
+          <p class="text-slate-600 mt-2">Interested in working together? Send a message and we’ll get back within 24–48 hours.</p>
+
+          <div class="mt-6 space-y-3">
+            <div class="flex items-center gap-3"><div class="text-sm text-slate-500">Phone</div><div class="font-medium">+91 98XX-XXX-XXX</div></div>
+            <div class="flex items-center gap-3"><div class="text-sm text-slate-500">Email</div><div class="font-medium">hello@rakibuilders.com</div></div>
+
+            <form id="contactForm" class="mt-6 grid gap-3" onsubmit="return false;">
+              <input id="name" class="w-full border rounded-md px-4 py-2" placeholder="Your name" required>
+              <input id="contactInfo" class="w-full border rounded-md px-4 py-2" placeholder="Email or phone" required>
+              <textarea id="message" class="w-full border rounded-md px-4 py-2" rows="4" placeholder="Tell us about your project" required></textarea>
+              <button id="sendBtn" class="bg-primary text-white px-4 py-2 rounded-md">Send message</button>
+            </form>
+
+            <div id="formMsg" class="text-sm text-slate-600 mt-2"></div>
+          </div>
+        </div>
+
+        <div class="rounded-2xl overflow-hidden shadow-lg">
+          <iframe class="w-full h-96" title="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.0190928190163!2d80.27071841546338!3d13.08268099047133!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525d0c8d6a3d5b%3A0x8a0b0b0b0b0b0b0b!2sChennai!5e0!3m2!1sen!2sin!4v1600000000000!5m2!1sen!2sin" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="bg-slate-900 text-white py-8">
+    <div class="max-w-6xl mx-auto px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-4">
+      <div>
+        <div class="font-extrabold text-lg">RAKI Builders</div>
+        <div class="text-slate-300 text-sm">Crafting beautiful, lasting spaces — Chennai, Coimbatore & Pondicherry</div>
+      </div>
+      <div class="text-sm text-slate-300">© <span id="year"></span> RAKI Builders & Designs. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <!-- SCRIPTS -->
+  <script>
+    // Year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Mobile menu toggle
+    const mobileBtn = document.getElementById('mobileBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    mobileBtn.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+
+    // Project modal
+    const projectCards = document.querySelectorAll('.project-card');
+    const projectModal = document.getElementById('projectModal');
+    const modalImg = document.getElementById('modalImg');
+    const modalTitle = document.getElementById('modalTitle');
+    const modalDesc = document.getElementById('modalDesc');
+    const closeModal = document.getElementById('closeModal');
+    const modalBg = document.getElementById('modalBg');
+
+    projectCards.forEach(card => {
+      card.addEventListener('click', () => {
+        modalImg.src = card.dataset.img;
+        modalTitle.textContent = card.dataset.title;
+        modalDesc.textContent = card.dataset.desc;
+        projectModal.classList.remove('hidden');
+        projectModal.classList.add('flex');
+      });
+    });
+    function hideModal(){ projectModal.classList.add('hidden'); projectModal.classList.remove('flex'); }
+    closeModal.addEventListener('click', hideModal);
+    modalBg.addEventListener('click', hideModal);
+
+    // Contact form (demo) - replace with your backend endpoint
+    const contactForm = document.getElementById('contactForm');
+    const formMsg = document.getElementById('formMsg');
+    contactForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const name = document.getElementById('name').value.trim();
+      const contactInfo = document.getElementById('contactInfo').value.trim();
+      const message = document.getElementById('message').value.trim();
+      if(!name || !contactInfo || !message){ formMsg.textContent = 'Please fill all fields.'; return; }
+
+      // Demo behaviour: show success message. Replace with fetch() to your server.
+      formMsg.textContent = 'Thanks! Your message has been received. We will reply within 24-48 hours.';
+      contactForm.reset();
+    });
+
+    // Accessibility: close modal with Esc
+    window.addEventListener('keydown', (e) => { if(e.key === 'Escape') hideModal(); });
+  </script>
+</body>
+</html>
